@@ -85,7 +85,7 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
     let delimiter = args.delimiter.as_str().chars().next().unwrap_or(',');
 
     println!(
-        "Program arguments\n path: {}\n delimiter: {}\n has header: {} \n worker count: {} \n sampling size {}",
+        "Program arguments\n path: {}\n delimiter: {:?}\n has header: {} \n worker count: {} \n sampling size {}",
         path,
         delimiter,
         has_header,
